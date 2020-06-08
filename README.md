@@ -27,4 +27,4 @@ Now on step 2 ..
     
     -include a lithology log  in the plot
     
-    -genererate a mosiac plot  (working on the moasaic plot now, with no joy :(
+    -genererate a mosiac plot  (working on the moasaic plot now, with no joy :(.  attached  notebook needs the mosaic clause fixed.

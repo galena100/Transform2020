@@ -17,5 +17,14 @@ A dataset for one hole can be found in the folder. Following are some basic inst
 5. When we get some results, maybe even plot using DASH or something flash like that.
 
 ### Where are we up to?
-Stuck on step 1.  Trying to get the syntax right for applying the gausian wavelet to the gamma curve.
+Stuck on step 1.  fixed!
+Added more data to repo folder, three holes now instead of 1 and added short spaced density(DENB), caliper(CADE) and sonic(MC2F) logs to the dataset.
+Got code working to generate a plot.  Yay!
+
+Now trying to ..
+-generate a strength of boundary defn plot
+-include a lithology log  in the plot
+-genererate a mosiac plot
+
+
 

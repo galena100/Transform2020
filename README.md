@@ -22,6 +22,9 @@ Added more data to repo folder, three holes now instead of 1 and added short spa
 
 Now on step 2 ..
     Now trying to ..
+    
     -generate a strength of boundary defn plot
+    
     -include a lithology log  in the plot
-    -genererate a mosiac plot
+    
+    -genererate a mosiac plot  (working on the moasaic plot now, with no joy :(

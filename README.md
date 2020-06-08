@@ -1,4 +1,4 @@
-# Determining Litho Boundaries from gamma logs
+# Determining Litho Boundaries from gamma logs for coal mining geoscientists
 ## Transform2020- Geology and Python conference
 
 This is some data and ideas for a hackathon project called [t20-litho_boundary_from_gamma](https://swung.slack.com/archives/C014YJM3UJW) taking place at the [Transform 2020](https://transform2020.sched.com/)  conference, a fully online geoscience conference.  This repo is to provide a dataset for this project.
@@ -10,21 +10,18 @@ Estimate lithology boundaries from downhole geophysics, using a continuous wavel
 A dataset for one hole can be found in the folder. Following are some basic instructions to play with.
 
 ### Suggested workflow
-1. Try and get some code to make lithology boundaries based (CWT) algorithm that read the gamma data in and outputs the interval boundaries.  Trying to use the code snippet on the home page of hte PyWavelets package with a 'gaus2'
+1. Try and get some code to make lithology boundaries based (CWT) algorithm that read the gamma data in and outputs the interval boundaries.  Trying to use the code snippet on the home page of the PyWavelets package with 'gaus2'
 2. Next step would be to view the gamma log, with the associated litho data and the outputted tesselations.  Essentially 3 strips.
 3. Somehow to compare the the tesselation boundaries with the actual lithology boundaries.  What can we use to compare?
 4. Repeat until the a reasonable match is found.  I think the trick here is dialling in the right.
 5. When we get some results, maybe even plot using DASH or something flash like that.
 
 ### Where are we up to?
-Stuck on step 1.  fixed!
-Added more data to repo folder, three holes now instead of 1 and added short spaced density(DENB), caliper(CADE) and sonic(MC2F) logs to the dataset.
-Got code working to generate a plot.  Yay!
+Stuck on step 1.  fixed! Got code working to generate a plot.  Yay!
+Added more data to repo folder, three holes now instead of 1 and added short spaced density(DENB), caliper(CADE) and sonic(MC2F) logs to the dataset (if that helps).  Eventually we may try getting interval boundaries from another log and then get the best from both.
 
-Now trying to ..
--generate a strength of boundary defn plot
--include a lithology log  in the plot
--genererate a mosiac plot
-
-
-
+Now on step 2 ..
+    Now trying to ..
+    -generate a strength of boundary defn plot
+    -include a lithology log  in the plot
+    -genererate a mosiac plot

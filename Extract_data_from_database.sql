@@ -1,7 +1,7 @@
 /*
 
 --------------------------------------------------
---used to export to csv for dataset -  single hole
+--1. used to export to csv for dataset -  single hole
 --------------------------------------------------
 
 --litho
@@ -17,13 +17,10 @@ where PRIORITY = min_prty
 order by HOLEID, GEOLFROM,PRIORITY
 
 --geophys
-select -1* DEPTH,[VALUE]
+select -1* DEPTH DEPTH,[VALUE]
 from QV_GEOPHYSDETAILS 
---where HOLEID = 'GL1010' and NAME = 'GRDE_gapi'
-where HOLEID in ('GL1010','GL1012','GL1015') and NAME IN  ('GRDE_gapi','DENB_g_cc','MC2F_us_f','CADE_mm')
-
-select * from 
-
+where HOLEID = 'GL1010' and NAME = 'GRDE_gapi'
+--where HOLEID in ('GL1010','GL1012','GL1015') and NAME IN  ('GRDE_gapi','DENB_g_cc','MC2F_us_f','CADE_mm')
 
 --dictionary
 select LOOKUP, [DESCRIPTION] from QV_VS_LOOKUP_RW 
@@ -80,5 +77,13 @@ order by HOLEID, DEPTH desc
 
 select LOOKUP, [DESCRIPTION] from QV_VS_LOOKUP_RW 
 where FIELDNAME = 'CLLI_Litho_Type' and LOOKUP in (select distinct VALUE from GEODETAILS where HOLEID in ('GL1010','GL1012','GL1015') and NAME = 'CLLI_Litho_Type')
+
+-------------------------------------------------------------------------------
+--3. used to export to single gamma as filtered csv for dataset -  single hole
+-------------------------------------------------------------------------------
+
+select -1* DEPTH DEPTH,[VALUE]
+from QV_GEOPHYSDETAILS 
+where HOLEID = 'GL1010' and NAME = 'GRDE_gapi' and DEPTH % 0.05 = 0 --the modulus filters out 4/5 of the data.
 
 */

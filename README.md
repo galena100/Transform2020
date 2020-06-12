@@ -1,6 +1,8 @@
 # Determining Litho Boundaries from gamma logs for coal mining geoscientists
 ## Transform2020- Geology and Python conference
 
+<img src="https://raw.githubusercontent.com/galena100/Transform2020/master/t20-litho_boundary_from_gamma/test_on_synthetic_data.JPG" alt="Your image title" width="500"/>
+
 This is some data and ideas for a hackathon project called [t20-litho_boundary_from_gamma](https://swung.slack.com/archives/C014YJM3UJW) taking place at the [Transform 2020](https://transform2020.sched.com/)  conference, a fully online geoscience conference.  This repo is to provide a dataset for this project.
 
 ### What are we trying to do?

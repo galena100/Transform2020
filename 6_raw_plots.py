@@ -83,3 +83,22 @@ plt.show()
 
 plt.show()
 #plt.savefig('common_labels.png', dpi=300)
+
+
+
+
+
+#Examples on Syntethic Log
+#    --------
+    import numpy as np
+    dep=np.arange(0,350,dt)
+    freq1=0.05
+    freq2=0.03
+    freq3=0.01
+    sin1 = np.array(np.sin(dep[0:1000] * freq1 * 2.0 * np.pi)).clip(-0.5,0.5)
+    sin2 = np.array(np.sin(dep[1000:2000] * freq2 * 2.0 * np.pi)).clip(-0.5,0.5)
+    sin3 = np.array(np.sin(dep[2000:] * freq3 * 2.0 * np.pi)).clip(-0.5,0.5)
+    syntwave=np.hstack((sin1,sin2,sin3))
+    fscales = np.linspace(50,600,100)
+    thres = 0.5
+    [bo,bos]=gr_bound(dep,syntwave,fscales,thres)

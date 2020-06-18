@@ -20,12 +20,12 @@ A dataset for one hole and one curve (or three holes with four curves) can be fo
 
 ### Where are we up to?
 
-- [x] conditioning the data
+- [x] 4 min presentation was given
     
-- [x] define the boundary using CWT
+- [x] Mosaic plot created
     
-- [x] boundary strength calculation
+- [x] Mosiac plot run against den and gam logs
     
-- [x] include a lithology log in the plot 
+- [x] included a lithology log in the plot 
     
-- [x] genererate a mosaic plot (kind of solved?)
+- [x] Project still open, minor changes still occuring.
